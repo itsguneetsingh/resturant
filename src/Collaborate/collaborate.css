@@ -1,0 +1,114 @@
+.collaborate-background{
+    background-color: #FFDAC9;
+    height: 60vh;
+    width: 100vw;
+    position: relative;
+}
+
+#white-line{
+    background-color: white;
+    width: 200px;
+    bottom: 38px;
+    height: 10px;
+}
+
+#collab-strike{
+    font: normal normal bold 35px/52px DIN Condensed;
+}
+
+#collaborate-heading{
+    padding-top: 100px;
+    margin-left: 150px;
+}
+
+#collab-desc{
+    text-align: left;
+    font: normal normal normal 15px/20px Gill Sans;
+    letter-spacing: 0.15px;
+    color: #767676;
+    width: 322px;
+}
+
+.form-master{
+    width: 525px;
+    height: 257.05px;
+    position: absolute;
+    right: 10vw;
+    top: 118.9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.pair{
+    display: flex;
+    justify-content: space-around;
+}
+
+.entry{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    text-align: left;
+    font: normal normal bold 14px/42px DIN Condensed;
+    letter-spacing: 0.14px;
+    color: #333333;
+}
+
+.entry input{
+    height: 30px;
+    width: 250px;
+    background-color: #FFDAC9;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid #333333;
+    z-index: 1;
+    outline: none;
+    cursor: pointer;
+}
+
+.entry input::placeholder{
+    text-align: left;
+    font: normal normal normal 15px/20px Gill Sans;
+    letter-spacing: 0.15px;
+    color: #767676;
+    opacity: 0.3;
+    z-index: 1;
+    
+}
+
+.entry select{
+    background-color: #FFDAC9;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #333333;
+    text-align: left;
+    font: normal normal normal 15px/20px "Gill Sans", sans-serif;
+    letter-spacing: 0.15px;
+    color: rgba(118, 118, 118, 0.3);
+    cursor: pointer;
+    padding-bottom: 10px;
+    width: 255px;
+    z-index: 1;
+}
+
+#button{
+    justify-content: end;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+#send-button{
+    background-color: #333333;
+    color: #FFDAC9;
+    height: 35px;
+    width: 70px;
+    padding: 10px;
+}
+
+.background-image{
+    position: absolute;
+    top: 10px;
+    right: 30vw;
+    height: 100px;
+}

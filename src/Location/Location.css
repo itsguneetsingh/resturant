@@ -1,0 +1,83 @@
+.location-background{
+    width: 100vw;
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    z-index: 1;
+}
+
+.map{
+    width: 100vw;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.location-box{
+    z-index: 2;
+    position: absolute;
+    top: 110.9px;
+    left: 155px;
+}
+
+#location-heading{
+    color: #333333;
+    font: normal normal bold 67px/58px DIN Condensed;
+    padding-bottom: 40px;
+}
+
+.white-box{
+    width: 230px;
+    height: 110.7px;
+    position: absolute;
+    background-color: white;
+    top: 15px;
+    left: -18px;
+    z-index: -1;
+}
+
+.text{
+    text-align: left;
+    font: normal normal normal 16px/20px Gill Sans;
+    letter-spacing: 0.15px;
+    color: #333333;
+    opacity: 1;
+}
+
+#address{
+    width: 180px;
+}
+
+#location-icon{
+    position: absolute;
+    left: 30vw;
+    top: 72px;
+}
+
+.zoom-section{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    bottom: 35px;
+    right: 60px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+#divider{
+    height: 1px;
+    width: 60%;
+    background-color: #CECECE;
+    align-self: center;
+}
+
+.zoom-button{
+    height: 27px;
+    width: 27px;
+    color: #767676;
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,102 @@
+.menu-background{
+    width: 100vw;
+    height: 894px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F8F8F8;
+}
+
+#menu-heading{
+    width: 100vw;
+    height: 50px;
+    font: normal normal bold 65px/52px DIN Condensed;
+    color: #333333;
+    opacity: 1;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    margin-top: 90px;
+    z-index: 1;
+    padding-top: 0px;
+}
+
+#strike-line{
+    bottom: 32px;
+    left: 41vw;
+}
+
+#menu-button{
+    align-self: center;
+}
+
+.menu-section:last-child {
+    border: none;
+}
+
+.menu-section:first-child {
+    overflow: unset;
+}
+
+.submenu-heading{
+    text-align: left;
+    font: normal normal bold 62px/52px DIN Condensed;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+    position: relative;
+    left: -45px;
+}
+
+.menu-item-heading{
+    text-align: left;
+    font: normal normal bold 14px/42px DIN Condensed;
+    letter-spacing: 0.14px;
+    color: #333333;
+    opacity: 1;
+}
+
+.menu-item-description{
+    text-align: left;
+    font: normal normal normal 15px/20px Gill Sans;
+    letter-spacing: 0.15px;
+    color: #767676;
+    opacity: 1;
+    width: 195.45px;
+}
+
+.menu-item-price{
+    text-align: left;
+    font: normal normal bold 14px/42px DIN Condensed;
+    letter-spacing: 0.14px;
+    color: #333333;
+    opacity: 1;
+    border: 2px solid #FFDAC9;
+    width: 53.58px;
+    height: 28.31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-section{
+    border-right: 1px solid #CECECE;
+    width: 267.73px;
+    padding-left: 38.79px;
+    height: 894px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-sections{
+    display: flex;
+}
+
+.menu-top-group{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}

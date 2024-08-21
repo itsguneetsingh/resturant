@@ -1,0 +1,181 @@
+.recipe-background {
+  height: 140vh;
+  width: 100vw;
+  position: relative;
+  background-color: white;
+  z-index: 2;
+}
+
+#recipe-line {
+  width: 200px;
+  bottom: 43px;
+}
+
+#recipe-heading {
+  margin-left: 150px;
+}
+
+#recipe-button {
+  position: absolute;
+}
+
+.share-recipe {
+  width: 476px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+  margin-right: 150px;
+  margin-top: 150px;
+}
+
+#share-recipe-text {
+  text-align: right;
+  font: normal normal bold 35px/52px DIN Condensed;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+
+#send-recipe {
+  width: 101px;
+  align-self: end;
+}
+
+.headings-div {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 70px; */
+}
+
+.recipe-card {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 12.5px;
+  margin-right: 12.5px;
+  position: relative;
+  background-color: white;
+  overflow: visible;
+  z-index: 1;
+  margin-top: 100px;
+}
+
+#first-slide {
+  width: 370px;
+  height: 570px;
+  margin-bottom: 100px;
+}
+
+#third-slide {
+  position: relative;
+  top: 110px;
+}
+
+#slider-container {
+  margin-left: 125px;
+}
+
+.chef-choice {
+  position: absolute;
+  top: -70px;
+  right: 20px;
+  width: 120px;
+  transform: rotate(15deg);
+  opacity: 1;
+  z-index: 2;
+}
+
+.image-part {
+  position: relative;
+  overflow: visible;
+}
+
+.servings {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 72px;
+  height: 72px;
+  background: #333333 0% 0% no-repeat padding-box;
+  opacity: 0.7;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font: normal normal bold 14px/8px DIN Condensed;
+  letter-spacing: 0.14px;
+}
+
+.servings-num {
+  font-size: 24px; /* Adjusted size */
+  line-height: 0.1;
+  text-align: center;
+  font: normal normal bold 35px/45px DIN Condensed;
+  letter-spacing: 0.35px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.view-recipe {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 40px; /* Size of the button */
+  height: 40px;
+  background-color: #f7e2d1;
+  border-radius: 50%; /* Rounded button */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  padding: 16px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.difficulty {
+  text-align: left;
+  font: normal normal bold 14px/42px DIN Condensed;
+  letter-spacing: 0.14px;
+  color: #767676;
+  opacity: 0.56;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.card-heading {
+  text-align: left;
+  font: normal normal bold 22px/25px DIN Condensed;
+  letter-spacing: 0.44px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 8px;
+}
+
+.card-description {
+  text-align: left;
+  font: normal normal normal 15px/20px Gill Sans;
+  letter-spacing: 0.15px;
+  color: #767676;
+  opacity: 1;
+}
+
+.arrows {
+  width: 111.64px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 130px;
+  right: 150px;
+}
