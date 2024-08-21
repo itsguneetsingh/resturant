@@ -49,7 +49,7 @@ const Home = () => {
         </div>
       </motion.div>
 
-      <img src="images/stamp.svg" id="stamp" alt="stamp" height={150} />
+      <img src="Images/stamp.svg" id="stamp" alt="stamp" height={150} />
 
       <div className="body">
         <div className="meter">
