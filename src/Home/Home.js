@@ -73,7 +73,7 @@ const Home = () => {
             {`0${currentSection}`}
           </motion.span>
         </div>
-        <div className="spacer"></div>
+        {/* <div className="spacer"></div> */}
         <div className="heading">
           <div className="medium-text">THE BEST FOODIE</div>
           <div id="large-text">EXPERIENCE</div>

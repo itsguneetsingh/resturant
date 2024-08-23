@@ -2,9 +2,10 @@
   background-image: url("../../public/Images/1000132333.png");
   background-repeat: no-repeat;
   width: 100vw;
-  height: 100vh;
+  height: 900px;
   background-position: center;
   background-size: cover;
+  overflow: hidden;
 }
 
 .navbar {
@@ -19,7 +20,7 @@
 
 .heading {
   font: normal normal bold "DIN Condensed";
-  width: 432px;
+  width: 100vw;
   height: 230px;
   color: white;
   text-align: center;
@@ -124,6 +125,8 @@
   padding-top: 4px;
   color: #333333;
   margin-top: 40px;
+  position: fixed;
+  right: 3px;
 }
 
 button {
