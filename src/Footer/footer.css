@@ -12,11 +12,12 @@
 }
 
 .container-div {
-  width: 95vw;
+  width: 100vw;
   /* height: max-content; */
   /* padding-bottom: 30px; */
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 20px 50px 20px 50px;
 }
 
@@ -48,7 +49,7 @@
   text-align: left;
   font: normal normal normal 13px/20px Gill Sans;
   letter-spacing: 0.13px;
-  color: #767676;
+  color: white;
   opacity: 1;
 }
 
@@ -83,7 +84,8 @@
   .footer-background {
     flex-direction: column;
     padding-top: 0px;
-    height: 350px;
+    height: max-content;
+    padding-bottom: 10px;
   }
 
   .section-container {
@@ -96,28 +98,47 @@
 
   .accordion-section {
     text-align: center;
+    width: 322px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .section-container {
+    flex-direction: column;
+    width: inherit;
+    margin-top: 20px;
+    align-items: center;
   }
 
   .logo {
     margin: 0px;
+    margin-top: 25px;
+    text-align: center;
+  }
+
+  .large-logo {
+    text-align: center;
   }
 
   .container-div {
-    margin: 20px;
+    margin: 10px 0px 10px 0px;
     justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
   }
 
   .company {
+    width: 322px;
     margin: 0px;
+    text-align: center;
   }
 
   .socials {
-    margin: 0px;
+    margin-top: 40px;
   }
 
   .accordion-section .section {
     cursor: pointer;
-    /* Additional styling for the section title */
   }
 
   .subsection-container {
@@ -128,9 +149,15 @@
 
   .subsection-container.expanded {
     max-height: 100vh;
+    border-bottom: white solid 1px;
   }
 
   .subsection-container.collapsed {
     max-height: 0;
+  }
+
+  .section {
+    width: 100%;
+    border-bottom: white solid 1px;
   }
 }

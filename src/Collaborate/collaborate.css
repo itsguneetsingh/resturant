@@ -113,10 +113,25 @@
   height: 100px;
 }
 
+@media (max-width: 1024px) {
+  .form-master {
+    width: 400px;
+  }
+
+  .entry input {
+    width: 170px;
+  }
+
+  .entry select {
+    width: 170px;
+  }
+}
+
 @media (max-width: 768px) {
   .form-master {
-    width: 100vw;
+    width: 322px;
     position: static;
+    margin-left: 50px;
   }
 
   .pair {
@@ -135,10 +150,35 @@
   }
 
   .collaborate-background {
-    height: 110vh;
+    height: 100vh;
   }
 
   #button {
-    margin-right: 60px;
+    margin-right: 0px;
+  }
+
+  .entry {
+    width: 322px;
+  }
+
+  .entry input {
+    width: 100%;
+  }
+
+  .entry select {
+    width: 100%;
+  }
+
+  #white-line {
+    width: 170px;
+    top: 118px;
+    height: 10px;
+    z-index: 1;
+    left: 30vw;
+  }
+
+  #with-us {
+    position: relative;
+    z-index: 2;
   }
 }

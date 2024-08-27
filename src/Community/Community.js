@@ -157,7 +157,7 @@ export default Community;
 const ImageCard = ({ image }) => {
   return (
     <div className="image-card">
-      <img src={image} alt="card" />
+      <img src={image} alt="card" className="image-in-card" />
       <img
         src="Images/instagram-btn.svg"
         className="ig-button"

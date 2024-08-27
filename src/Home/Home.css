@@ -181,7 +181,7 @@ button {
   .home-background {
     /* background-size: cover; */
     width: 100%;
-    /* height: auto; */
+    height: 100vh;
   }
 
   /* Hide the meter in the mobile version */

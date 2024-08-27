@@ -176,7 +176,40 @@
   height: 150px;
 }
 
-/* Existing styles for larger screens */
+.image-in-card {
+  height: inherit;
+  width: inherit;
+}
+
+@media (max-width: 1024px) {
+  #first {
+    top: 350px;
+    right: 10vw;
+  }
+
+  #second {
+    top: 700px;
+    left: 10vw;
+  }
+
+  #third {
+    top: 1000px;
+    right: 10vw;
+  }
+
+  .community-background {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    z-index: -2;
+    overflow: hidden;
+  }
+
+  .bottom-left {
+    margin: 30px auto;
+    bottom: 5vh;
+  }
+}
 
 @media (max-width: 768px) {
   .community-background {
@@ -185,7 +218,7 @@
     position: relative;
     z-index: -2;
     overflow: hidden;
-    padding: 20px;
+    /* padding: 20px; */
   }
 
   .community-heading {
@@ -256,6 +289,7 @@
     box-shadow: 0 4px 8px 0 #0000000f;
     position: relative;
     z-index: 1;
+    margin: 0px;
   }
 
   .image-card {

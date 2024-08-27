@@ -201,9 +201,9 @@
   }
 
   #recipe-line {
-    width: 180px;
+    width: 170px;
     bottom: 123px;
-    left: 26vw;
+    left: 30vw;
   }
 
   #recipe-button {
@@ -232,7 +232,8 @@
   }
 
   #slider-container {
-    margin-left: 0px;
+    margin-left: 15px;
+    overflow: hidden;
   }
 
   .recipe-background {
@@ -241,5 +242,10 @@
 
   .arrows {
     bottom: 24px;
+  }
+
+  .recipe-card {
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
