@@ -4,6 +4,7 @@ import { motion, useTransform, useScroll } from "framer-motion";
 const MenuSection = ({ heading, menu, index }) => {
   const ref = useRef(null);
   const [elementTop, setElementTop] = useState(0);
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
 
   const { scrollY } = useScroll();
 
@@ -13,6 +14,7 @@ const MenuSection = ({ heading, menu, index }) => {
         const rect = ref.current.getBoundingClientRect();
         setElementTop(rect.top + window.scrollY);
       }
+      setIsDesktop(window.innerWidth > 768);
     };
 
     window.addEventListener("resize", handleResize);
@@ -30,11 +32,14 @@ const MenuSection = ({ heading, menu, index }) => {
   const inputRange = [start, middle, end];
   const outputRange = index % 2 === 0 ? [-400, 10, -800] : [400, 10, 800];
 
-  // Use transform to apply the animation phases
+  // Use transform to apply the animation phases (always call useTransform)
   const y = useTransform(scrollY, inputRange, outputRange);
 
+  // Conditionally apply the transform style
+  const motionStyle = isDesktop ? { y } : {};
+
   return (
-    <motion.div ref={ref} className="menu-section" style={{ y }}>
+    <motion.div ref={ref} className="menu-section" style={motionStyle}>
       <h2 className="submenu-heading">{heading}</h2>
       <div>
         {menu.map((item, idx) => (

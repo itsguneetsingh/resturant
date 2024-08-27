@@ -112,3 +112,33 @@
   right: 30vw;
   height: 100px;
 }
+
+@media (max-width: 768px) {
+  .form-master {
+    width: 100vw;
+    position: static;
+  }
+
+  .pair {
+    display: grid;
+    grid-column: 1;
+  }
+
+  .background-image {
+    display: none;
+  }
+
+  #collaborate-heading {
+    padding-top: 50px;
+    margin-left: 0px;
+    height: 275px;
+  }
+
+  .collaborate-background {
+    height: 110vh;
+  }
+
+  #button {
+    margin-right: 60px;
+  }
+}

@@ -78,3 +78,59 @@
   height: 15px;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .footer-background {
+    flex-direction: column;
+    padding-top: 0px;
+    height: 350px;
+  }
+
+  .section-container {
+    flex-direction: column;
+    order: 2;
+    margin-left: 0px;
+    width: max-content;
+    /* display: none; */
+  }
+
+  .accordion-section {
+    text-align: center;
+  }
+
+  .logo {
+    margin: 0px;
+  }
+
+  .container-div {
+    margin: 20px;
+    justify-content: space-evenly;
+  }
+
+  .company {
+    margin: 0px;
+  }
+
+  .socials {
+    margin: 0px;
+  }
+
+  .accordion-section .section {
+    cursor: pointer;
+    /* Additional styling for the section title */
+  }
+
+  .subsection-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+
+  .subsection-container.expanded {
+    max-height: 100vh;
+  }
+
+  .subsection-container.collapsed {
+    max-height: 0;
+  }
+}

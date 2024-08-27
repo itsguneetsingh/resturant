@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useState, useRef } from "react";
 import "./Recipe.css";
 import RecipeCard from "./RecipeCard";
 import Slider from "react-slick";
@@ -6,15 +6,28 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Recipe = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
   const settings = {
     className: "slider variable-width",
     dots: false,
     speed: 500,
     infinite: false,
-    slidesToShow: 3,
+    slidesToShow: windowWidth > 750 ? 3 : 1,
     slidesToScroll: 1,
     variableWidth: true,
     infinite: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: false,
+        },
+      },
+    ],
   };
 
   const sliderRef = useRef(null);

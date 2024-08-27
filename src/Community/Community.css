@@ -83,6 +83,7 @@
 .cards-container {
   display: flex;
   margin: 25px;
+  position: absolute;
 }
 
 .caption {
@@ -126,19 +127,16 @@
 }
 
 #first {
-  position: absolute;
   top: 120px;
   right: 10vw;
 }
 
 #second {
-  position: absolute;
   top: 400px;
   left: 10vw;
 }
 
 #third {
-  position: absolute;
   top: 700px;
   right: 10vw;
 }
@@ -176,4 +174,155 @@
   left: 15vw;
   z-index: -1;
   height: 150px;
+}
+
+/* Existing styles for larger screens */
+
+@media (max-width: 768px) {
+  .community-background {
+    height: auto;
+    width: 100vw;
+    position: relative;
+    z-index: -2;
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  .community-heading {
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+    font: normal normal bold 55px/52px DIN Condensed;
+    color: #333333;
+    opacity: 1;
+    text-align: center;
+    margin: 0 auto 20px;
+  }
+
+  .line {
+    background-color: #ffdac9;
+    width: 59%;
+    max-width: 300px;
+    height: 5.7px;
+    left: 20vw;
+    bottom: 130px;
+  }
+
+  .strike-text {
+    color: #333333;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .community-button {
+    background-color: #ffdac9;
+    padding: 8px 16px;
+    margin: 0 auto 20px;
+    text-align: center;
+    color: #333333;
+    opacity: 1;
+    cursor: pointer;
+    display: block;
+    max-width: 200px;
+  }
+
+  .community-description {
+    font: normal normal bold 24px/25px DIN Condensed;
+    margin: 0 auto 30px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  .cards-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    margin: 25px auto;
+    gap: 10px;
+    width: 100%;
+    position: static;
+  }
+
+  .image-card,
+  .textcard {
+    background-color: white;
+    max-width: 200px;
+    height: 200px;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 #0000000f;
+    position: relative;
+    z-index: 1;
+  }
+
+  .image-card {
+    margin: 0px;
+  }
+
+  .ig-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .caption,
+  .username,
+  .engagement {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+  }
+
+  .caption {
+    font: normal normal normal 15px/20px Gill Sans;
+    color: #333333;
+    opacity: 1;
+  }
+
+  .username {
+    font: normal normal bold 22px/52px DIN Condensed;
+    color: #333333;
+    opacity: 1;
+  }
+
+  .engagement {
+    font: normal bold 14px/42px DIN Condensed;
+    color: #333333;
+    opacity: 1;
+    justify-content: center;
+  }
+
+  .lnk {
+    margin-right: 5px;
+  }
+
+  .nums {
+    margin-left: 5px;
+  }
+
+  .bottom-left {
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    font: normal normal normal 15px/20px Gill Sans;
+    color: #333333;
+    opacity: 1;
+    margin: 30px auto;
+    position: static;
+  }
+
+  .img1,
+  .img2,
+  .img3 {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    z-index: -1;
+    display: none;
+  }
 }

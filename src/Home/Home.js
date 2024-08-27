@@ -12,7 +12,6 @@ const Home = () => {
       const sectionHeight = window.innerHeight;
 
       // Determine the current section based on scroll position
-      // Adding a small offset (like 0.5) to ensure rounding works as expected
       const current = Math.min(
         Math.max(Math.round(scrollPosition / sectionHeight) + 1, 1),
         6
@@ -73,7 +72,6 @@ const Home = () => {
             {`0${currentSection}`}
           </motion.span>
         </div>
-        {/* <div className="spacer"></div> */}
         <div className="heading">
           <div className="medium-text">THE BEST FOODIE</div>
           <div id="large-text">EXPERIENCE</div>

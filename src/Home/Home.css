@@ -24,7 +24,6 @@
   height: 230px;
   color: white;
   text-align: center;
-  translate: 20px 0px;
 }
 
 .navbar-logo {
@@ -127,6 +126,7 @@
   margin-top: 40px;
   position: fixed;
   right: 3px;
+  z-index: 10;
 }
 
 button {
@@ -144,4 +144,94 @@ button {
 #stamp {
   margin-top: 17vh;
   margin-left: 20vw;
+}
+
+#menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.menu-overlay-button {
+  background: none;
+  border: none;
+  color: white;
+  font: normal normal bold 18px DIN Condensed;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 768px) {
+  /* Adjust the background image to fit the screen */
+  .home-background {
+    /* background-size: cover; */
+    width: 100%;
+    /* height: auto; */
+  }
+
+  /* Hide the meter in the mobile version */
+  .meter {
+    display: none;
+  }
+
+  /* Decrease the font size of text inside the heading class */
+  #small-text {
+    font-size: 30px; /* Reduced by 10px */
+    line-height: 32px;
+  }
+
+  .medium-text {
+    font-size: 52px; /* Reduced by 10px */
+    line-height: 55px;
+  }
+
+  #large-text {
+    font-size: 75px; /* Reduced by 10px */
+    line-height: 80px;
+  }
+
+  /* Adjust the home-button position for mobile */
+  .home-button {
+    transform: none; /* Remove the rotate transform */
+    margin-top: 80px; /* Adjust top margin */
+    position: absolute;
+    bottom: 10vh;
+    right: 35vw;
+  }
+
+  .navbar div {
+    display: none; /* Hide all content in the navbar */
+  }
+
+  .navbar-logo {
+    display: inline-block; /* Ensure the logo remains visible */
+  }
+
+  .navbar-hamburger {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 24px; /* Adjust size as needed */
+    margin-right: 20px;
+  }
+
+  #menu {
+    position: absolute;
+    top: 15px;
+    right: 5px;
+  }
 }

@@ -1,32 +1,119 @@
-.location-background{
+.location-background {
+  width: 100vw;
+  height: 550px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  z-index: 1;
+}
+
+.map {
+  width: 100vw;
+  height: 50vh;
+  object-fit: cover;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.location-box {
+  z-index: 2;
+  position: absolute;
+  top: 110.9px;
+  left: 155px;
+}
+
+#location-heading {
+  color: #333333;
+  font: normal normal bold 67px/58px DIN Condensed;
+  padding-bottom: 40px;
+}
+
+.white-box {
+  width: 230px;
+  height: 110.7px;
+  position: absolute;
+  background-color: white;
+  top: 15px;
+  left: -18px;
+  z-index: -1;
+}
+
+.text {
+  text-align: left;
+  font: normal normal normal 16px/20px Gill Sans;
+  letter-spacing: 0.15px;
+  color: #333333;
+  opacity: 1;
+}
+
+#address {
+  width: 180px;
+}
+
+#location-icon {
+  position: absolute;
+  left: 30vw;
+  top: 72px;
+}
+
+.zoom-section {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  bottom: 35px;
+  right: 60px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+#divider {
+  height: 1px;
+  width: 60%;
+  background-color: #cecece;
+  align-self: center;
+}
+
+.zoom-button {
+  height: 27px;
+  width: 27px;
+  color: #767676;
+  text-align: center;
+  font-weight: 900;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .location-background {
     width: 100vw;
-    height: 550px;
+    height: max-content;
     position: relative;
     overflow: hidden;
     background-size: cover;
     z-index: 1;
-}
+  }
 
-.map{
+  .map {
     width: 100vw;
     object-fit: cover;
     z-index: 2;
-}
+  }
 
-.location-box{
+  .location-box {
     z-index: 2;
     position: absolute;
-    top: 110.9px;
-    left: 155px;
-}
+    top: 10.9px;
+    left: 144px;
+  }
 
-#location-heading{
+  #location-heading {
     color: #333333;
     font: normal normal bold 67px/58px DIN Condensed;
     padding-bottom: 40px;
-}
+  }
 
-.white-box{
+  .white-box {
     width: 230px;
     height: 110.7px;
     position: absolute;
@@ -34,27 +121,27 @@
     top: 15px;
     left: -18px;
     z-index: -1;
-}
+  }
 
-.text{
+  .text {
     text-align: left;
     font: normal normal normal 16px/20px Gill Sans;
     letter-spacing: 0.15px;
     color: #333333;
     opacity: 1;
-}
+  }
 
-#address{
+  #address {
     width: 180px;
-}
+  }
 
-#location-icon{
+  #location-icon {
     position: absolute;
-    left: 30vw;
-    top: 72px;
-}
+    left: -9vw;
+    top: 111px;
+  }
 
-.zoom-section{
+  .zoom-section {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -63,16 +150,16 @@
     right: 60px;
     background-color: white;
     border-radius: 3px;
-}
+  }
 
-#divider{
+  #divider {
     height: 1px;
     width: 60%;
-    background-color: #CECECE;
+    background-color: #cecece;
     align-self: center;
-}
+  }
 
-.zoom-button{
+  .zoom-button {
     height: 27px;
     width: 27px;
     color: #767676;
@@ -80,4 +167,5 @@
     font-weight: 900;
     font-size: 20px;
     cursor: pointer;
+  }
 }
